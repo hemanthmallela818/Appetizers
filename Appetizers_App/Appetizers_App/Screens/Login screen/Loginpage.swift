@@ -19,12 +19,12 @@ struct LoginView: View {
     var body: some View {
         NavigationStack{
             
-//            if viewmodel.profile != nil {
-//                ContentView(details: viewmodel)
-//                    .navigationBarBackButtonHidden(true)
-//
-//                
-//            } else {
+            if viewmodel.profile != nil {
+                ContentView(details: viewmodel)
+                    .navigationBarBackButtonHidden(true)
+
+                
+            } else {
                 ZStack {
                     LinearGradient(gradient: Gradient(stops: [.init(color: .lightgreen, location: 0.1),.init(color: .darkgreen, location: 0.9)]), startPoint: .top, endPoint: .bottom)
                         .ignoresSafeArea()
@@ -103,7 +103,7 @@ struct LoginView: View {
             
         }
     }
-//}
+}
 
 
 #Preview {

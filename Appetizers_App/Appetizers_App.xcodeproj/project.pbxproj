@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F40CFB242E85401400914439 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F40CFB232E85401400914439 /* GoogleSignIn */; };
+		F40CFB262E85401400914439 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F40CFB252E85401400914439 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F40CFB0E2E853EF700914439 /* Appetizers_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40CFB242E85401400914439 /* GoogleSignIn in Frameworks */,
+				F40CFB262E85401400914439 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = Appetizers_App;
 			packageProductDependencies = (
+				F40CFB232E85401400914439 /* GoogleSignIn */,
+				F40CFB252E85401400914439 /* GoogleSignInSwift */,
 			);
 			productName = Appetizers_App;
 			productReference = F40CFB0E2E853EF700914439 /* Appetizers_App.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = F40CFB052E853EF600914439;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F40CFB222E85401400914439 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F40CFB0F2E853EF700914439 /* Products */;
 			projectDirPath = "";
@@ -250,6 +262,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Appetizers-App-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -292,6 +305,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Appetizers-App-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -345,6 +359,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F40CFB222E85401400914439 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F40CFB232E85401400914439 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F40CFB222E85401400914439 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		F40CFB252E85401400914439 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F40CFB222E85401400914439 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F40CFB062E853EF600914439 /* Project object */;
 }
